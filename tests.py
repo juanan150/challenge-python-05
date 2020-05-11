@@ -13,7 +13,7 @@ if __name__ == '__main__':
             self.strings = {
                 'hola': 'aloh',
                 'adios': 'soida',
-                'roma': 'amor'
+                'roma': 'amor',
             }
 
         def test_reverse_string(self):
