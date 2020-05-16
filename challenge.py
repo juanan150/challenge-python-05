@@ -41,6 +41,8 @@ if __name__ == '__main__':
 
     class GeometrySuite(unittest.TestCase):
         def setUp(self):
+            #!El setUp sólo se recomienda cuando los mismos datos sirven para diferentes Tests, y va
+            #!con el TearDown al final
             self.areas = {
                 'square': [16, 4],
                 'rectangle': [30, 6, 5],
@@ -92,6 +94,7 @@ if __name__ == '__main__':
                 circumference_area(self.areas['circumference'][1]))
 
         def tearDown(self):
+            #!Acompaña al setUp
             del (self.areas)
 
     unittest.main()
